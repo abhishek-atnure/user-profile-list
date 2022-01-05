@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import useFetchUsers from "../../hooks/useFetchUsers";
 import Card from "../Card/Card";
+import "./CardList.css";
 
 function CardList() {
   const [pageNum, setPageNum] = useState(1);
@@ -41,7 +42,9 @@ function CardList() {
           picture={el.picture}
         />
       ))}
-      <span ref={setElement}>Loading</span>
+      <span id="loading" ref={setElement}>
+        Loading
+      </span>
     </div>
   );
 }

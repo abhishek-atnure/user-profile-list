@@ -24,7 +24,13 @@ function useFetchUsers(pageNumber) {
       ]);
       setLoading(false);
     };
-    fetchRandomPerson();
+    const id = setTimeout(() => {
+      fetchRandomPerson();
+    }, [1000]);
+
+    return () => {
+      clearTimeout(id);
+    };
   }, [pageNumber]);
 
   return { loading, users };
