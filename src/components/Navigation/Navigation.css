@@ -1,0 +1,20 @@
+nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  align-items: center;
+  background: black;
+  color: white;
+  margin-bottom: 30px;
+}
+
+nav h2 {
+  font-size: 22px;
+}
+
+nav span a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
